@@ -1,7 +1,7 @@
 title: ""
 author: "Hao-Wei Liang"
 description: "National Taiwan University"
-permalink: /:title/
+permalink: /:About_me/
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
