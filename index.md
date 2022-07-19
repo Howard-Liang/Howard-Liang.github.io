@@ -3,7 +3,7 @@ layout: page
 title: "Hao-Wei Liang"
 ---
 
-<img src="/assets/NTU.png" alt="Cover" width="24%" align='right'/>
+<img src="/assets/NTU-square.png" alt="Cover" width="24%" align='right'/>
 
 Hi!
 
