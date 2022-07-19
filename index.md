@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Hao-Wei Liang"
+title: ""
 ---
 
 <img src="/assets/NTU.png" alt="Cover" width="24%" align='right'/>
