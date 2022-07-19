@@ -1,4 +1,4 @@
-title: ""
+title: "Howard Liang"
 author: "Hao-Wei Liang"
 description: "National Taiwan University"
 permalink: /:title/
@@ -18,7 +18,7 @@ minimal: false             # use a dark header
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html"}
   - {file: "README.md"}
-  - {file: "index.md"}
+  - {file: "index.md", title: "About"}
   - {url: "/CV_Hao_Wei_7_15.pdf", title: "CV"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
