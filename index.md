@@ -7,7 +7,7 @@ title: "Hao-Wei Liang"
 
 Hi!
 
-I m a senior student in the [Department of Electrical Engineering at  
+I am a senior student in the [Department of Electrical Engineering at  
 National Taiwan University](https://web.ee.ntu.edu.tw/) and a research assistant in [CITI,  Academia Sinica](https://www.citi.sinica.edu.tw/). 
 
 I am interested in VLSI design, signal processing, and computer architecture.
