@@ -4,17 +4,60 @@ layout: page
 sitemap: false
 ---
 
-<article>
-  <img src="/assets/NTU.png" width = "24%" style="float: right; margin-left: 40px;">
-  <p>Hi! Welcome to my homepage.
-    <br/>
-    <br/>
-    I am a senior student in the <a href="https://web.ee.ntu.edu.tw/">Department of Electrical Engineering at National Taiwan University</a> and a research assistant in <a href="https://www.citi.sinica.edu.tw">CITI at Academia Sinica</a>. 
-    <br/>
-    <br/>
-    I am interested in VLSI design, signal processing, and computer architecture.
-    <br/>
-    <br/>
-    <br/>
-    "Music washes away from the soul the dust of everyday life." <b><i>- Berthold Auerbach</i></b>
-</article>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      h5{text-align: right;}
+      body {
+        background-color: white;
+        color: black;
+      }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+      .light-mode {
+        background-color: white;
+        color: black;
+      }
+    </style>
+</head>
+<body>
+  <article>
+    <img src="/assets/NTU.png" width = "30%" style="float: right; margin-left: 40px;">
+    <p>Hi! Welcome to my homepage.
+      <br/>
+      <br/>
+      I am a senior student in the <a href="https://web.ee.ntu.edu.tw/">Department of Electrical Engineering at National Taiwan University</a> and a research assistant in <a href="https://www.citi.sinica.edu.tw">CITI at Academia Sinica</a>. 
+      <br/>
+      <br/>
+      I am interested in VLSI design, signal processing, and computer architecture.
+      <br/>
+      <br/>
+      <br/>
+      "Music washes away from the soul the dust of everyday life." <b><i>- Berthold Auerbach</i></b>
+      <br/>
+      <br/>
+    </article>
+  <h5 id="DarkModetext">Light Mode</h5>
+    <button onclick="SwitchMode()" style="float: right">
+      <i class="fa-solid fa-circle-half-stroke"></i>
+    </button>
+    <script>
+      function SwitchMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        if (element.className == "dark-mode") {
+          element.className = "light-mode";
+          content.innerText = "Light Mode";
+        }
+        else {
+          element.className = "dark-mode";
+          content.innerText = "Dark Mode";
+        }
+      }
+    </script>
+</body> 
