@@ -15,34 +15,6 @@ body
   body
     background: $dark
     color: $light
-    
-html, html[data-theme= $light] {
-	--link-color: $link-color
-  --main-background-color: $light
-  --main-text-color: $dark
-}
-
-html[data-theme= $dark] {
-  --link-color: $link-color
-  --main-background-color: $dark
-  --main-text-color: $light
-}
-
-
-@media (prefers-color-scheme: dark) {
-    html, html[data-theme="dark"] {
-      --link-color: $link-color
-    	--main-background-color: $dark
-    	--main-text-color: $light
-    }
-
-    html[data-theme="light"] {
-		  --link-color: $link-color
-    	--main-background-color: $light
-  	 --main-text-color: $dark
-  } 
-}
-
 
 h1, h2, h3, h4, h5, h6
   font-weight: $heading-weight
