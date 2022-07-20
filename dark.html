@@ -32,18 +32,20 @@ sitemap: false
     </p>
   
     <h3 id="DarkModetext">Dark Mode is OFF</h3>
-    <button onclick="SwitchMode()"><i class="fa-solid fa-circle-half-stroke"></i></button>
+    <button onclick="SwitchMode()">
+      <i class="fa-solid fa-circle-half-stroke"></i>
+    </button>
     <script>
       function SwitchMode() {
         var element = document.body;
         var content = document.getElementById("DarkModetext");
-        if (element.className == "light-mode") {
-          element.className = "dark-mode";
-          content.innerText = "Dark Mode is ON";
-        }
-        else {
+        if (element.className == "dark-mode") {
           element.className = "light-mode";
           content.innerText = "Dark Mode is OFF";
+        }
+        else {
+          element.className = "dark-mode";
+          content.innerText = "Dark Mode is ON";
         }
       }
     </script>
