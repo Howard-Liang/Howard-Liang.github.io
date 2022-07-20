@@ -4,34 +4,78 @@ layout: default
 sitemap: false
 ---
 
-<article>
-  <header><h3>Dean's List Award (NTU)</h3></header>
-  <img src="/assets/Dean's_109-2.jpg" width = "24%" style="float: right; margin-left: 40px;">
-  <p>Awarded to the top 5% students in a semester.
-    <br/>
-    2nd semester 2020-2021.
-</article>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      h5{text-align: right;}
+      body {
+        background-color: white;
+        color: black;
+      }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+      .light-mode {
+        background-color: white;
+        color: black;
+      }
+    </style>
+</head>
 
-<article>
-  <header><h3>Dean's List Award (NTU)</h3></header>
-  <img src="/assets/Dean's_109-1.jpg" width = "24%" style="float: right; margin-left: 40px;">
-  <p>Awarded to the top 5% students in a semester.
-    <br/>
-    1st semester 2020-2021.
-</article>
+<body>
+  
+  <article>
+    <header><h3>Dean's List Award (NTU)</h3></header>
+    <img src="/assets/Dean's_109-2.jpg" width = "24%" style="float: right; margin-left: 40px;">
+    <p>Awarded to the top 5% students in a semester.
+      <br/>
+      2nd semester 2020-2021.
+  </article>
 
-<article>
-  <header><h3>Dean's List Award (NTU)</h3></header>
-  <img src="/assets/Dean's_107-2.jpg" width = "24%" style="float: right; margin-left: 40px;">
-  <p>Awarded to the top 5% students in a semester.
-    <br/>
-    2nd semester 2018-2019.
-</article>
+  <article>
+    <header><h3>Dean's List Award (NTU)</h3></header>
+    <img src="/assets/Dean's_109-1.jpg" width = "24%" style="float: right; margin-left: 40px;">
+    <p>Awarded to the top 5% students in a semester.
+      <br/>
+      1st semester 2020-2021.
+  </article>
 
-<article>
-  <header><h3>Dean's List Award (NTU)</h3></header>
-  <img src="/assets/Dean's_107-1.jpg" width = "24%" style="float: right; margin-left: 40px;">
-  <p>Awarded to the top 5% students in a semester.
-    <br/>
-    1st semester 2018-2019.
-</article>
+  <article>
+    <header><h3>Dean's List Award (NTU)</h3></header>
+    <img src="/assets/Dean's_107-2.jpg" width = "24%" style="float: right; margin-left: 40px;">
+    <p>Awarded to the top 5% students in a semester.
+      <br/>
+      2nd semester 2018-2019.
+  </article>
+
+  <article>
+    <header><h3>Dean's List Award (NTU)</h3></header>
+    <img src="/assets/Dean's_107-1.jpg" width = "24%" style="float: right; margin-left: 40px;">
+    <p>Awarded to the top 5% students in a semester.
+      <br/>
+      1st semester 2018-2019.
+  </article>
+
+  <h5 id="DarkModetext">Light Mode</h5>
+    <button onclick="SwitchMode()" style="float: right">
+      <i class="fa-solid fa-circle-half-stroke"></i>
+    </button>
+    <script>
+      function SwitchMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        if (element.className == "dark-mode") {
+          element.className = "light-mode";
+          content.innerText = "Light Mode";
+        }
+        else {
+          element.className = "dark-mode";
+          content.innerText = "Dark Mode";
+        }
+      }
+    </script>
+</body> 
