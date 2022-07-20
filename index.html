@@ -26,7 +26,7 @@ sitemap: false
 </head>
 <body>
   <article>
-    <img src="/assets/NTU.png" width = "24%" style="float: right; margin-left: 40px;">
+    <img src="/assets/NTU.png" width = "30%" style="float: right; margin-left: 40px;">
     <p>Hi! Welcome to my homepage.
       <br/>
       <br/>
@@ -38,8 +38,10 @@ sitemap: false
       <br/>
       <br/>
       "Music washes away from the soul the dust of everyday life." <b><i>- Berthold Auerbach</i></b>
+      <br/>
+      <br/>
     </article>
-  <h3 id="DarkModetext">Dark Mode is OFF</h3>
+  <h5 id="DarkModetext">Light Mode</h5>
     <button onclick="SwitchMode()">
       <i class="fa-solid fa-circle-half-stroke"></i>
     </button>
@@ -49,11 +51,11 @@ sitemap: false
         var content = document.getElementById("DarkModetext");
         if (element.className == "dark-mode") {
           element.className = "light-mode";
-          content.innerText = "Dark Mode is OFF";
+          content.innerText = "Light Mode";
         }
         else {
           element.className = "dark-mode";
-          content.innerText = "Dark Mode is ON";
+          content.innerText = "Dark Mode";
         }
       }
     </script>
