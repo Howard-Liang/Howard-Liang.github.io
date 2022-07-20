@@ -23,6 +23,11 @@ sitemap: false
         background-color: white;
         color: black;
       }
+	    
+      .button {
+        margin:0 auto;
+    	display:block;
+      }
     </style>
 </head>
 
@@ -62,9 +67,11 @@ sitemap: false
 
   <article>
   <h5 id="DarkModetext">Light Mode</h5>
-    <button onclick="SwitchMode()" style="float: right">
-      <i class="fa-solid fa-circle-half-stroke"></i>
-    </button>
+    <div>
+	    <button class="button" type="button" onclick="SwitchMode()">
+			<i class="fa-solid fa-circle-half-stroke"></i>
+	    </button>
+    </div>
     <script>
       let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)"); 
       let theme = sessionStorage.getItem('theme');
