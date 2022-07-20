@@ -18,7 +18,7 @@ minimal: true             # use a dark header
 navigation:                # accepts {file, title, url, icon, sidebaricon} 
   - {file: "About_me.html", title: "About me"}
   - {file: "Honors.html", title: "Honors"}
-  - {file: "dark.html", icon: "<i class="fa-solid fa-circle-half-stroke"></i>"}
+  - {file: "dark.html", icon: <i class="fa-solid fa-circle-half-stroke"></i>}
   - {url: "/CV_Hao_Wei_7_19.pdf", title: "CV"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
