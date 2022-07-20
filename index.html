@@ -47,17 +47,61 @@ sitemap: false
       <i class="fa-solid fa-circle-half-stroke"></i>
     </button>
     <script>
-      function SwitchMode() {
-        var element = document.body;
-        var content = document.getElementById("DarkModetext");
-        if (element.className == "dark-mode") {
-          element.className = "light-mode";
-          content.innerText = "Light Mode";
-        }
-        else {
+      let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)"); 
+      let theme = sessionStorage.getItem('theme');
+        
+      var content = document.getElementById("DarkModetext");
+      var element = document.body;
+      if (systemInitiatedDark.matches) {
           element.className = "dark-mode";
           content.innerText = "Dark Mode";
+      } else {
+          element.className = "light-mode";
+          content.innerText = "Light Mode";
+      }
+        
+      function prefersColorTest(systemInitiatedDark) {
+        if (systemInitiatedDark.matches) {
+  	        document.documentElement.setAttribute('data-theme', 'dark');		
+   	        content.innerText = "Dark Mode";
+   	        sessionStorage.setItem('theme', '');
+        } else {
+  	        document.documentElement.setAttribute('data-theme', 'light');
+            content.innerText = "Light Mode";
+            sessionStorage.setItem('theme', '');
         }
+      }
+      systemInitiatedDark.addListener(prefersColorTest);
+
+      function SwitchMode() {
+        let theme = sessionStorage.getItem('theme');
+	    if (theme === "dark") {
+		    document.documentElement.setAttribute('data-theme', 'light');
+		    sessionStorage.setItem('theme', 'light');
+		    content.innerText = "Light Mode";
+	    } else if (theme === "light") {
+		    document.documentElement.setAttribute('data-theme', 'dark');
+		    sessionStorage.setItem('theme', 'dark');
+		    content.innerText = "Dark Mode";
+	    } else if (systemInitiatedDark.matches) {	
+		    document.documentElement.setAttribute('data-theme', 'light');
+		    sessionStorage.setItem('theme', 'light');
+		    content.innerText = "Light Mode";
+	    } else {
+		    document.documentElement.setAttribute('data-theme', 'dark');
+		    sessionStorage.setItem('theme', 'dark');
+		    content.innerText = "Dark Mode";
+	    }
+      }
+        
+      if (theme === "dark") {
+	    document.documentElement.setAttribute('data-theme', 'dark');
+	    sessionStorage.setItem('theme', 'dark');
+	    content.innerText = "Dark Mode";
+      } else if (theme === "light") {
+	    document.documentElement.setAttribute('data-theme', 'light');
+	    sessionStorage.setItem('theme', 'light');
+	    content.innerText = "Light Mode";
       }
     </script>
 </body>  
