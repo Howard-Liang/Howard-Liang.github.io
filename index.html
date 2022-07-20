@@ -44,7 +44,10 @@ sitemap: false
     </article>
   <h5 id="DarkModetext">Light Mode</h5>
     <button onclick="SwitchMode()" style="float: right">
-      <i class="fa-solid fa-circle-half-stroke"></i>
+	<svg viewBox="0 0 32 32" width="32px" height="32px" 
+     	aria-hidden="true" focusable="false">
+      		<i class="fa-solid fa-circle-half-stroke"></i>
+	</svg>
     </button>
     <script>
       let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)"); 
