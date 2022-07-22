@@ -6,8 +6,9 @@ category: media
 author: howard
 ---
 
+<article>
 ![Graduation](/assets/Graduation.jpg)
-
+</article>
 
 
 <head>
