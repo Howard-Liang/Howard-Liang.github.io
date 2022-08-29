@@ -1,0 +1,83 @@
+---
+title: "Board"
+layout: default
+sitemap: false
+---
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        padding: 100px;
+    }
+
+    textarea {
+        width: 200px;
+        height: 100px;
+        border: 1px pink solid;
+        /* Do not set profile */
+        outline: none;
+        /* Setting it cannot change the length and width */
+        resize: none;
+    }
+
+    li {
+        width: 300px;
+        padding: 5px;
+        background-color: #eee;
+        font-size: 15px;
+        margin: 15px 0;
+    }
+
+    li a {
+        float: right;
+    }
+</style>
+
+<body>
+    <textarea></textarea>
+    <button>release</button>
+    <ul></ul>
+    <script>
+        //1. Get element
+        var txt = document.querySelector("textarea");
+        var btn = document.querySelector("button");
+        var ul = document.querySelector("ul");
+        //2. Bind click event to button
+        btn.onclick = function () {
+            if (txt.value == "") {//Prompt when there is no text in the text box
+                alert("You have not entered anything")
+            } else {
+                //Create element li as message area
+                var li = document.createElement("li");
+                //Put the content in the text box into li, and the content in href in a tag means nothing
+                li.innerHTML = txt.value + "<a href='javascript:;'>delete</a>"
+                txt.value = "";//After adding, the contents of the text box are cleared
+                //Add the message to ul and at the top
+                ul.insertBefore(li, ul.children[0]);
+                //When you click delete, delete li in ul
+                var as = document.querySelectorAll("a");
+                //Loop through each delete binding event
+                for (var i = 0; i < as.length; i++) {
+                    as[i].onclick = function () {
+                        //Delete the parent node li where the current a tag is located
+                        ul.removeChild(this.parentNode);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
