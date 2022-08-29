@@ -35,10 +35,24 @@ sitemap: false
 
 </script>
 
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+}
+
 <body>
 	<div class="content">
-        <div class="title" style="width:800px; margin:0 auto;">使用者留言</div>
-        <div class="message_box" id="messageBox" style="width:800px; margin:0 auto;"></div>
+        <div class="title">使用者留言</div>
+        <div class="message_box" id="messageBox"></div>
         <div><input id="myInput" type="text" placeholder="請輸入留言類容"><button id="doPost">提交</button></div>
     </div>
 	<br>
