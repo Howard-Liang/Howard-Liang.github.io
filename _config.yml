@@ -29,6 +29,7 @@ external:                  # shows a footer with social links - for available ic
 comments:
 #  disqus_shortname: "test"    # see https://disqus.com/
   isso_domain: "test"         # see https://posativ.org/isso/
+  isso: True
 
 plugins:
  - jekyll-feed
