@@ -27,7 +27,7 @@ external:                  # shows a footer with social links - for available ic
   - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/%E7%9A%93%E7%91%8B-%E6%A2%81-97063a225/?locale=en_US"}
 
 comments:
-#  disqus_shortname: ""    # see https://disqus.com/
+  disqus_shortname: ""    # see https://disqus.com/
 #  isso_domain: ""         # see https://posativ.org/isso/
 
 plugins:
