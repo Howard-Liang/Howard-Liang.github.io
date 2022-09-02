@@ -20,6 +20,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "Honors.html", title: "Honors"}
   - {file: "blog.html", title: "Blog"}
   - {url: "/CV_Hao_Wei_8_26.pdf", title: "CV"}
+  - {file: "chat.html", title: "Chat"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:b07502022@ntu.edu.tw"}
