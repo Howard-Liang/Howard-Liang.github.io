@@ -103,7 +103,7 @@
 	function enablePostCommentButton() {
 		var postCommentButton = document.getElementById("comment-submit");
 		postCommentButton.disabled = false;
-		setText("comment-submit", "Send");
+		setText("comment-submit", "Post");
 	};
 
 
@@ -627,7 +627,7 @@
 <div id="comments-and-input">
 	<div id="comment-section" class="comments">
 		<p id="num-comments-displayed"></p>
-		<button id="load-more-comments" class="comment-button" onclick="loadMoreComments(true)" type="button">Load Older Messages</button>
+		<button id="load-more-comments" class="comment-button" onclick="loadMoreComments(true)" type="button">Load Older Comments</button>
 		<div id="no-comments" class="comment-info-text">
 			<p>There are currently no comments on this article, be the first to add one below</p>
 		</div>
@@ -657,7 +657,7 @@
 						{%- endif -%}
 					</li>
 					<li><textarea id="comment-comment" name="comment" placeholder="Comment" required=""></textarea></li>
-					<li><button id="comment-submit" type="submit" class="comment-button">Send</button></li>
+					<li><button id="comment-submit" type="submit" class="comment-button">Post</button></li>
 				</ul>
 				{%- if recaptcha_enabled -%}
 				<p id="comment-recaptcha-disclaimer">This site is protected by reCAPTCHA and the Google
