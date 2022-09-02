@@ -3,8 +3,52 @@ title: "Chat"
 layout: default
 sitemap: false
 ---
-<body>
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      h5{text-align: center;}
+      body {
+        background-color: white;
+        color: black;
+      }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+      .light-mode {
+        background-color: white;
+        color: black;
+      }
+	    
+      .button {
+        margin:0 auto;
+    	display:flex;
+	background-color: white;
+	border:none;
+     	border-radius:16px;
+	background-size: 15px !important;
+    	width: 15px !important;
+    	height: 15px !important;
+	justify-content: center;
+    	align-items: center;
+      }
+      .button:hover {
+        background-color:#a9a9a9;
+	transition: 0.2s;
+      }
+      .button:active {
+        background-color:white;
+      }
+	   
+    </style>
+</head>
+
 	{% include comment-section.html url=page.url %}
+
 <article>
   <p font-size=0.9 style="text-align:center">"Live as if you were to die tomorrow. Learn as if you were to live forever." <b><i> -  Mahatma Gandhi</i></b></p>
   <h5 id="DarkModetext">Light Mode</h5>
@@ -71,5 +115,4 @@ sitemap: false
 	    content.innerText = "Light Mode";
       }
     </script>
-   </article>
-</body>
+</article>
