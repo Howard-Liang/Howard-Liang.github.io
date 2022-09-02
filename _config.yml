@@ -31,6 +31,10 @@ comments:
 #  disqus: True
 #  isso_domain: "test"         # see https://posativ.org/isso/
 
+comment-post: https://docs.google.com/forms/d/e/1FAIpQLSe8QHBMcGJGv_NoeWGvnar-8YIZEYVizWETaa0z31zpaYa8mg
+comment-read: https://docs.google.com/spreadsheets/d/1lncu2itj-8ib_g55Dd14kopj4Po9lsLtHiZjQZ3JItE
+comment-post-fields: [ entry.408511679, entry.332886046, entry.857820914]
+
 plugins:
  - jekyll-feed
 
