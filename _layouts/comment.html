@@ -27,6 +27,23 @@ layout: default
         }
       }
       systemInitiatedDark.addListener(prefersColorTest);
+
+      function SwitchMode() {
+        let theme = sessionStorage.getItem('theme');
+	    if (theme === "dark") {
+		    element.className = "light-mode";
+		    sessionStorage.setItem('theme', 'light');
+	    } else if (theme === "light") {
+		    element.className = "dark-mode";
+		    sessionStorage.setItem('theme', 'dark');
+	    } else if (systemInitiatedDark.matches) {	
+		    element.className = "light-mode";
+		    sessionStorage.setItem('theme', 'light');
+	    } else {
+		    element.className = "dark-mode";
+		    sessionStorage.setItem('theme', 'dark');
+	    }
+      }
         
       if (theme === "dark") {
 	    element.className = "dark-mode";
