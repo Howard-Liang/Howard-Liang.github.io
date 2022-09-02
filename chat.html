@@ -5,31 +5,35 @@ sitemap: false
 ---
 
 <article>
-	
-	<p>Testing.
-	{% include comment-section.html url=page.url %}
+  <p font-size=0.9 style="text-align:center">"Live as if you were to die tomorrow. Learn as if you were to live forever." <b><i> -  Mahatma Gandhi</i></b></p>
+  <h5 id="DarkModetext">Light Mode</h5>
+    <div>
+	    <button class="button" type="button" onclick="SwitchMode()">
+			<i class="fa-solid fa-circle-half-stroke"></i>
+	    </button>
+    </div>
     <script>
       let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)"); 
       let theme = sessionStorage.getItem('theme');
         
-//       var content = document.getElementById("DarkModetext");
+      var content = document.getElementById("DarkModetext");
       var element = document.body;
       if (systemInitiatedDark.matches) {
           element.className = "dark-mode";
-//           content.innerText = "Dark Mode";
+          content.innerText = "Dark Mode";
       } else {
           element.className = "light-mode";
-//           content.innerText = "Light Mode";
+          content.innerText = "Light Mode";
       }
         
       function prefersColorTest(systemInitiatedDark) {
         if (systemInitiatedDark.matches) {
   	        element.className = "dark-mode";		
-//    	        content.innerText = "Dark Mode";
+   	        content.innerText = "Dark Mode";
    	        sessionStorage.setItem('theme', '');
         } else {
   	        element.className = "light-mode";
-//             	content.innerText = "Light Mode";
+            	content.innerText = "Light Mode";
             	sessionStorage.setItem('theme', '');
         }
       }
@@ -40,30 +44,30 @@ sitemap: false
 	    if (theme === "dark") {
 		    element.className = "light-mode";
 		    sessionStorage.setItem('theme', 'light');
-// 		    content.innerText = "Light Mode";
+		    content.innerText = "Light Mode";
 	    } else if (theme === "light") {
 		    element.className = "dark-mode";
 		    sessionStorage.setItem('theme', 'dark');
-// 		    content.innerText = "Dark Mode";
+		    content.innerText = "Dark Mode";
 	    } else if (systemInitiatedDark.matches) {	
 		    element.className = "light-mode";
 		    sessionStorage.setItem('theme', 'light');
-// 		    content.innerText = "Light Mode";
+		    content.innerText = "Light Mode";
 	    } else {
 		    element.className = "dark-mode";
 		    sessionStorage.setItem('theme', 'dark');
-// 		    content.innerText = "Dark Mode";
+		    content.innerText = "Dark Mode";
 	    }
       }
         
       if (theme === "dark") {
 	    element.className = "dark-mode";
 	    sessionStorage.setItem('theme', 'dark');
-// 	    content.innerText = "Dark Mode";
+	    content.innerText = "Dark Mode";
       } else if (theme === "light") {
 	    element.className = "light-mode";
 	    sessionStorage.setItem('theme', 'light');
-// 	    content.innerText = "Light Mode";
+	    content.innerText = "Light Mode";
       }
     </script>
-</article>
+   </article>
