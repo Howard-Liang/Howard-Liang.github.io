@@ -4,7 +4,6 @@ layout: default
 
 <article>
   {% include meta.html post=page %}
-  {% include comment-section.html url=page.url %}
   {{ content }}
   {% if page.comments != false and site.comments.isso or site.comments.disqus %}
     <hr>
@@ -12,4 +11,5 @@ layout: default
     {% if site.comments.disqus_shortname %}<div id="disqus_thread"></div>{% endif %}
     <noscript>Please enable JavaScript to view comments.</noscript>
   {% endif %}
+  {% include comment-section.html url=page.url %}
 </article>
