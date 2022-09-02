@@ -7,52 +7,5 @@ sitemap: false
 <article>
 	
 	<p>Testing.
-	<script>
-      let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)"); 
-      let theme = sessionStorage.getItem('theme');
-        
-
-      var element = document.body;
-      if (systemInitiatedDark.matches) {
-          element.className = "dark-mode";
-      } else {
-          element.className = "light-mode";
-      }
-        
-      function prefersColorTest(systemInitiatedDark) {
-        if (systemInitiatedDark.matches) {
-  	        element.className = "dark-mode";		
-   	        sessionStorage.setItem('theme', '');
-        } else {
-  	        element.className = "light-mode";
-            	sessionStorage.setItem('theme', '');
-        }
-      }
-      systemInitiatedDark.addListener(prefersColorTest);
-
-      function SwitchMode() {
-        let theme = sessionStorage.getItem('theme');
-	    if (theme === "dark") {
-		    element.className = "light-mode";
-		    sessionStorage.setItem('theme', 'light');
-	    } else if (theme === "light") {
-		    element.className = "dark-mode";
-		    sessionStorage.setItem('theme', 'dark');
-	    } else if (systemInitiatedDark.matches) {	
-		    element.className = "light-mode";
-		    sessionStorage.setItem('theme', 'light');
-	    } else {
-		    element.className = "dark-mode";
-		    sessionStorage.setItem('theme', 'dark');
-	    }
-      }
-        
-      if (theme === "dark") {
-	    element.className = "dark-mode";
-	    sessionStorage.setItem('theme', 'dark');
-      } else if (theme === "light") {
-	    element.className = "light-mode";
-	    sessionStorage.setItem('theme', 'light');
-      }
-    </script>
+	
 </article>
