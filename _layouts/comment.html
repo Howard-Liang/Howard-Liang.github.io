@@ -5,4 +5,35 @@ layout: default
 <article>
   {{ content }}
   {% include comment-section.html url=page.url %}
+  <script>
+      let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)"); 
+      let theme = sessionStorage.getItem('theme');
+        
+
+      var element = document.body;
+      if (systemInitiatedDark.matches) {
+          element.className = "dark-mode";
+      } else {
+          element.className = "light-mode";
+      }
+        
+      function prefersColorTest(systemInitiatedDark) {
+        if (systemInitiatedDark.matches) {
+  	        element.className = "dark-mode";		
+   	        sessionStorage.setItem('theme', '');
+        } else {
+  	        element.className = "light-mode";
+            	sessionStorage.setItem('theme', '');
+        }
+      }
+      systemInitiatedDark.addListener(prefersColorTest);
+        
+      if (theme === "dark") {
+	    element.className = "dark-mode";
+	    sessionStorage.setItem('theme', 'dark');
+      } else if (theme === "light") {
+	    element.className = "light-mode";
+	    sessionStorage.setItem('theme', 'light');
+      }
+    </script>
 </article>
