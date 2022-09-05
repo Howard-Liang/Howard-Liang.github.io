@@ -36,6 +36,9 @@ comment-post: https://docs.google.com/forms/d/e/1FAIpQLSemu_Sp2HDPw-eUEXpnkgrYZw
 comment-read: https://docs.google.com/spreadsheets/d/1LlmTAQ3JQbPsTTaSj6s8qSv-Y4KKlZaQEJxH7oBakUU
 comment-post-fields: [ entry.1871447507, entry.1336864959, entry.1069055142]
 
+google_forms_comments:
+  comment_replies_enabled: true
+
 plugins:
  - jekyll-feed
 
