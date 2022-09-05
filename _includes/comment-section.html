@@ -332,16 +332,22 @@
 		var duration = 1000;
 		var step = 25;
 		let opacity = 1;
+		var R = 3;
+		var G = 155;
+		var B = 229;
 		const timer = setInterval(function() {
 		  opacity -= (1 / (duration / step));
+		  R += (255-  3)/(duration/step);
+		  G += (255-155)/(duration/step);
+		  B += (255-229)/(duration/step);
 		  if (opacity <= 0) {
 		    clearInterval(timer);
 		    currentFadeItem = null;
 		    opacity = 0;
-			element.style.background = "rgba(255, 255, 255, "+ 1 +")";
 		  }
-		  element.style.background = "rgba(3, 155, 229, "+ opacity +")";
+// 		  element.style.background = "rgba(3, 155, 229, "+ opacity +")";
 // 		  element.style.background = "rgba(3, 155, 229, "+ 1 +")";
+		  element.style.background = "rgba(" + R + ", " + G + ", " + B + ", " + 1 +")";
 		}, step);
 		currentFadeItem = timer;
 	};
