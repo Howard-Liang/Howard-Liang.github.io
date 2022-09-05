@@ -624,12 +624,12 @@
 {%- endcomment -%}
 <h3 class="post-subtitle">Chat with friends that stop by :D</h3>
 <div id="load-comments" class="comments">
-	<button id="load-comment-button" class="comment-button" onclick="initialCommentLoad()">Load Comments</button>
+	<button id="load-comment-button" class="comment-button-load" onclick="initialCommentLoad()">Load Comments</button>
 </div>
 <div id="comments-and-input">
 	<div id="comment-section" class="comments">
 		<p id="num-comments-displayed"></p>
-		<button id="load-more-comments" class="comment-button" onclick="loadMoreComments(true)" type="button">load older comments</button>
+		<button id="load-more-comments" class="comment-button-load" onclick="loadMoreComments(true)" type="button">load older comments</button>
 		<div id="no-comments" class="comment-info-text">
 			<p>There are currently no comments on this article, be the first to add one below</p>
 		</div>
@@ -841,6 +841,40 @@
   background: #68f;
   text-decoration: inherit;
 }
+	
+
+.comment-button-load {
+/* 	border: 0; */
+	border: 1.5px solid #68f;
+	border-radius: 2px;
+/* 	background: #68f;
+	color: #fff; */
+	background: rgba(0,0,0,0);
+	color: #68f;
+	font-family: "Source Sans Pro", sans-serif;
+/* 	font-weight: bold; */
+/* 	font-size: 0.9em; */
+	font-size: 1em;
+/* 	text-transform: uppercase; */
+	margin-bottom: 20px;
+/* 	margin: 2em 0 1em; */
+	outline-style: none;
+/* 	padding: 10px 20px; */
+	padding: .4em .8em;
+/* 	width: auto; */
+	width: 10%;
+/* 	min-width: 25%; */
+	cursor: pointer;
+	
+  	transition: .2s background, .2s color;
+}
+.comment-button-load:hover {
+  color: #fff;
+  background: #68f;
+  text-decoration: inherit;
+}
+	
+	
 	  
 #comment-submit {
 	width: auto;
