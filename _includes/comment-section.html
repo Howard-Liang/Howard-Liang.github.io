@@ -332,14 +332,17 @@
 		var duration = 1250;
 		var step = 25;
 		let opacity = 1;
+// 		var R = 255;
+// 		var G = 221;
+// 		var B = 101;
 		var R = 255;
-		var G = 221;
-		var B = 101;
+		var G = 101;
+		var B = 212;
 		const timer = setInterval(function() {
 		  opacity -= (1 / (duration / step));
 		  R += (255-255)/(duration/step);
-		  G += (255-221)/(duration/step);
-		  B += (255-101)/(duration/step);
+		  G += (255-101)/(duration/step);
+		  B += (255-212)/(duration/step);
 		  if (opacity <= 0) {
 		    clearInterval(timer);
 		    currentFadeItem = null;
