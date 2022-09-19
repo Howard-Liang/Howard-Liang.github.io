@@ -12,14 +12,14 @@ body
   -moz-osx-font-smoothing: grayscale
 
 article:not(:last-of-type)
-  border-bottom: 1px solid currentColor
+  border-bottom: 1px solid reduce(14)
 
 @media (prefers-color-scheme: dark)
   body
     background: $dark
     color: $light
 
-@media (prefers-color-scheme: dark)
+@media (currentColor: dark)
   article:not(:last-of-type)
     border-bottom: 1px solid $light
 
