@@ -12,12 +12,7 @@ body
   -moz-osx-font-smoothing: grayscale
   
 article:not(:last-of-type)
-  @if (currentColor == $light) {
-    border-bottom: 1px solid #ffffff
-  }
-  @else {
-    border-bottom: 1px solid reduce(14)
-  }
+  border-bottom: 1px solid reduce(60)
 
 @media (prefers-color-scheme: dark)
   body
