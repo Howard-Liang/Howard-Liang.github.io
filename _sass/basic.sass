@@ -42,7 +42,11 @@ hr
   margin: 2em 0
 
 article:not(:last-of-type)
-  border-bottom: 1px solid #68f
+  border-bottom: 1px solid reduce(14)
+
+@media (prefers-color-scheme: dark)
+  article:not(:last-of-type)
+    border-bottom: 1px solid #ffffff
 
 blockquote
   background: reduce(6)
