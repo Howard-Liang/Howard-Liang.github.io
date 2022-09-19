@@ -10,18 +10,19 @@ body
   -webkit-text-size-adjust: 100%
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-
+  
 article:not(:last-of-type)
-  border-bottom: 1px solid reduce(14)
+  @if (currentColor == $light) {
+    border-bottom: 1px solid #ffffff
+  }
+  @else {
+    border-bottom: 1px solid reduce(14)
+  }
 
 @media (prefers-color-scheme: dark)
   body
     background: $dark
     color: $light
-
-@media (currentColor: $dark)
-  article:not(:last-of-type)
-    border-bottom: 1px solid $light
 
 h1, h2, h3, h4, h5, h6
   font-weight: $heading-weight
