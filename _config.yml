@@ -1,6 +1,6 @@
 title: ""
 author: "Hao-Wei Liang"
-description: "National Taiwan University"
+description: "University of California, Berkeley"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -17,7 +17,7 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon} 
   - {file: "index.html", title: "Home"}
-  - {file: "Honors.html", title: "Honors"}
+  # - {file: "Honors.html", title: "Honors"}
   - {file: "blog.html", title: "Blog"}
   - {file: "chat.html", title: "Chat"}
   - {url: "/CV_Hao_Wei-8_5.pdf", title: "CV"}
