@@ -1,6 +1,6 @@
 title: ""
 author: "Hao-Wei Liang"
-description: "University of California, Berkeley <img src='/assets/img/ucb-seal.png' width='14' style='vertical-align: middle'>"
+description: "University of California, Berkeley <i class="fa-solid fa-microchip" style="color: #68F;"></i>"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
